@@ -1,12 +1,12 @@
 ZSH_THEME_DATE_PREFIX="%{$reset_color%}%{$fg[white]%}"
-ZSH_THEME_DATE_SUFFIX=" %{$reset_color%}"
+ZSH_THEME_DATE_SUFFIX="%{$reset_color%}"
 date_custom_status() {
   echo "$ZSH_THEME_DATE_PREFIX$(date +"%r")$ZSH_THEME_DATE_SUFFIX"
 }
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[blue]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} %{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 git_custom_status() {
   local cb=$(current_branch)
